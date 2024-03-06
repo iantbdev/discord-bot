@@ -20,6 +20,7 @@ const quotes = [
   "You risked your life just for a present for me, you’re so thoughtful  \n  I know you like your trident a lot, so I had to!",
   "If we get permission to live there... You know it’s a really big castle for just Ramón and I.  \n OOOOH You know, I would like also to share a room there!",
   "And I was wondering if I could get your blessing, since you’re very attached to Fit and Fit loves you a lot.",
+  "If he [Cellbit] even lays a finger on you, all hell is going to break loose, I can promise you that.",
   "You're a tough guy, you know? You're a tough guy... you're perfect, perfect!",
   "Dangerous? \n For me, not necessarily for you. \n Well, but if it is dangerous for you, it is also dangerous for me",
   "I’m going to ignore all the red flags, I’m colorblind",
