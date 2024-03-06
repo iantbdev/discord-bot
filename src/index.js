@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { Client, IntentsBitField } = require("discord.js");
+const { Client, IntentsBitField, ActivityType } = require("discord.js");
 
 const client = new Client({
   intents: [
@@ -54,12 +54,15 @@ const quotes = [
   "I’m working on myself. I’m working on myself. \n It’s all good Fit, it’s all good!",
   "Yours truly, Fit",
   "Fit: ❤️ \n Pactw: ❤️❤️",
+  "Fit: Looking good Pac, AWOOOGGAAA AWOOOOOGGGA \n Fit: *slames desk* \n Fit: *wolf whistle*",
+  "Wow… Wow… That’s– That’s really thoughtful… That was.. That-eh, That… ooooooh! That was very nice! Very nice letter! Very nice! *laughs* Nice! What– What am I supposed to say to that? That was incredible– he has a way with words! *laughs*",
   "He’s fucking lost it. My man has fucking lost it.",
   "Nothing lasts forever, Fit…",
   "B-But it’s a new me, Fit. It’s a new me. I’m a new, improved Pac– happier than ever. \n I want the old Pac back.",
   "I am not gonna kill Pac today, it doesn't matter how much points it will give us– I will not do it.",
   "Pac… I see how it is… I see how it is.",
   "Can I build my house near yours?  \n Oh I would be mad if you don’t",
+  "Okay, Fit– you are looking so good today \n Oh! Thank you, Pac– you’re looking good as well, as well, as well!",
   "What?! Pac got me a trident! Aw, he’s so thoughtful– so thoughtful! That’s so hype.",
   "/he loves you xD/ \n *laughs* Ramon… ahh, that’s good… Love is a strong word– we’ve only been dating for a month! The L-word is pretty quick",
   "Hello Big Daddy!",
@@ -67,11 +70,16 @@ const quotes = [
   "I would kiss, kill, and marry Fit.",
   "Eu gosto de você também.",
 ];
-
 const pickRandom = (array) => array[Math.floor(Math.random() * array.length)];
 
 client.on("ready", (c) => {
   console.log(`${c.user.tag} is online! 🦾`);
+
+  client.user.setActivity({
+    name: "Pac",
+    type: ActivityType.Streaming,
+    url: "https://www.twitch.tv/peqitw",
+  });
 });
 
 client.on("messageCreate", (message) => {
